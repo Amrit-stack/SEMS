@@ -1,0 +1,531 @@
+<?php
+include "connection.php"; 
+if(isset($_POST['submit']))
+{
+    $GLOBALS=0;
+    $sql="SELECT crn FROM football";
+    $res=mysqli_query($db,$sql);
+    while($row=mysqli_fetch_assoc($res))
+    {
+        if ($row['crn']==$_POST['crn'])
+         {
+            $GLOBALS=$GLOBALS+1;
+        }
+
+    }  
+    $sql11="SELECT faculty FROM football";
+    $res11=mysqli_query($db,$sql);
+    while($row11=mysqli_fetch_assoc($res11))
+     {
+
+        if ($_POST['faculty']=='computer' and $_POST['batch']=='015')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='computer' and batch='015'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql12="SELECT faculty FROM football";
+    $res12=mysqli_query($db,$sql);
+    while($row12=mysqli_fetch_assoc($res12))
+     {
+
+        if ($_POST['faculty']=='computer' and $_POST['batch']=='016')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='computer' and batch='016'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql13="SELECT faculty FROM football";
+    $res13=mysqli_query($db,$sql);
+    while($row13=mysqli_fetch_assoc($res13))
+     {
+
+        if ($_POST['faculty']=='computer' and $_POST['batch']=='017')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='computer' and batch='017'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql41="SELECT faculty FROM football";
+    $res14=mysqli_query($db,$sql);
+    while($row14=mysqli_fetch_assoc($res14))
+     {
+
+        if ($_POST['faculty']=='computer' and $_POST['batch']=='018')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='computer' and batch='018'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql21="SELECT faculty FROM football";
+    $res21=mysqli_query($db,$sql);
+    while($row21=mysqli_fetch_assoc($res21)) {
+
+        if ($_POST['faculty']=='electrical' and $_POST['batch']=='015')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electrical' and batch='015'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql22="SELECT faculty FROM football";
+    $res22=mysqli_query($db,$sql);
+    while($row22=mysqli_fetch_assoc($res22)) {
+
+        if ($_POST['faculty']=='electrical' and $_POST['batch']=='016')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electrical' and batch='016'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql23="SELECT faculty FROM football";
+    $res23=mysqli_query($db,$sql);
+    while($row23=mysqli_fetch_assoc($res23)) {
+
+        if ($_POST['faculty']=='electrical' and $_POST['batch']=='017')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electrical' and batch='017'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql24="SELECT faculty FROM football";
+    $res24=mysqli_query($db,$sql);
+    while($row24=mysqli_fetch_assoc($res24)) {
+
+        if ($_POST['faculty']=='electrical' and $_POST['batch']=='018')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electrical' and batch='018'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql31="SELECT faculty FROM football";
+    $res31=mysqli_query($db,$sql);
+    while($row31=mysqli_fetch_assoc($res31)) {
+
+        if ($_POST['faculty']=='electronics' and $_POST['batch']=='015' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electronics' and batch='015'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql32="SELECT faculty FROM football";
+    $res32=mysqli_query($db,$sql);
+    while($row32=mysqli_fetch_assoc($res32)) {
+
+        if ($_POST['faculty']=='electronics' and $_POST['batch']=='016' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electronics' and batch='016'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql33="SELECT faculty FROM football";
+    $res33=mysqli_query($db,$sql);
+    while($row33=mysqli_fetch_assoc($res33)) {
+
+        if ($_POST['faculty']=='electronics' and $_POST['batch']=='017' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electronics' and batch='017'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql34="SELECT faculty FROM football";
+    $res34=mysqli_query($db,$sql);
+    while($row34=mysqli_fetch_assoc($res34)) {
+
+        if ($_POST['faculty']=='electronics' and $_POST['batch']=='018' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='electronics' and batch='018'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql41="SELECT faculty FROM football";
+    $res41=mysqli_query($db,$sql);
+    while($row41=mysqli_fetch_assoc($res41)) {
+
+        if ($_POST['faculty']=='civil and rural' and $_POST['batch']=='015' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil and rural' abd batch='015'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql42="SELECT faculty FROM football";
+    $res42=mysqli_query($db,$sql);
+    while($row42=mysqli_fetch_assoc($res42)) {
+
+        if ($_POST['faculty']=='civil and rural' and $_POST['batch']=='016' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil and rural' abd batch='016'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql43="SELECT faculty FROM football";
+    $res43=mysqli_query($db,$sql);
+    while($row43=mysqli_fetch_assoc($res43)) {
+
+        if ($_POST['faculty']=='civil and rural' and $_POST['batch']=='017' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil and rural' abd batch='017'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql44="SELECT faculty FROM football";
+    $res44=mysqli_query($db,$sql);
+    while($row44=mysqli_fetch_assoc($res44)) {
+
+        if ($_POST['faculty']=='civil and rural' and $_POST['batch']=='018' )
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil and rural' abd batch='018'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql51="SELECT faculty FROM football";
+    $res51=mysqli_query($db,$sql);
+    while($row51=mysqli_fetch_assoc($res51)) {
+
+        if ($_POST['faculty']=='architecture' and $_POST['batch']=='015')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='architecture' and batch='015'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql52="SELECT faculty FROM football";
+    $res52=mysqli_query($db,$sql);
+    while($row52=mysqli_fetch_assoc($res52)) {
+
+        if ($_POST['faculty']=='architecture' and $_POST['batch']=='016')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='architecture' and batch='016'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql53="SELECT faculty FROM football";
+    $res53=mysqli_query($db,$sql);
+    while($row53=mysqli_fetch_assoc($res53)) {
+
+        if ($_POST['faculty']=='architecture' and $_POST['batch']=='017')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='architecture' and batch='017'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql54="SELECT faculty FROM football";
+    $res54=mysqli_query($db,$sql);
+    while($row54=mysqli_fetch_assoc($res54)) {
+
+        if ($_POST['faculty']=='architecture' and $_POST['batch']=='018')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='architecture' and batch='018'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql61="SELECT faculty FROM football";
+    $res61=mysqli_query($db,$sql);
+    while($row61=mysqli_fetch_assoc($res61)) {
+
+        if ($_POST['faculty']=='civil' and $_POST['batch']=='015')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil' and batch='015'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql62="SELECT faculty FROM football";
+    $res62=mysqli_query($db,$sql);
+    while($row62=mysqli_fetch_assoc($res62)) {
+
+        if ($_POST['faculty']=='civil' and $_POST['batch']=='016')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil' and batch='016'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+$sql63="SELECT faculty FROM football";
+    $res63=mysqli_query($db,$sql);
+    while($row63=mysqli_fetch_assoc($res63)) {
+
+        if ($_POST['faculty']=='civil' and $_POST['batch']=='017')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil' and batch='017'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+$sql64="SELECT faculty FROM football";
+    $res64=mysqli_query($db,$sql);
+    while($row64=mysqli_fetch_assoc($res64)) {
+
+        if ($_POST['faculty']=='civil' and $_POST['batch']=='018')
+         {
+            
+$user_check_query="SELECT COUNT(*) as a from football where faculty='civil' and batch='018'";
+$result=mysqli_query($db,$user_check_query);
+
+while ($user=mysqli_fetch_assoc($result)) 
+{
+    if ($user['a']>=11) 
+    {
+   $GLOBALS=$GLOBALS+2;;
+    }
+}
+}
+}
+
+
+if($GLOBALS==0)
+{
+$faculty=$_POST['faculty'];
+$batch=$_POST['batch'];
+$crn=$_POST['crn'];
+$playername=$_POST['playername'];
+
+if (!preg_match("/^[a-zA-Z ]*$/",$playername))
+echo "Only letters and white space allowed in the first name";
+ else
+ {
+    
+$insert_student=" INSERT INTO football(faculty,batch,crn,playername)values('$faculty','$batch','$crn','$playername')";
+
+mysqli_query($db,$insert_student);
+ ?>
+ <script type="text/javascript">
+    alert("Registration successful");
+ </script>
+ <?php 
+}
+}
+else if($GLOBALS==1)
+{
+    ?>
+    <script type="text/javascript">
+    alert("CRN already exist");
+ </script>
+ <?php 
+}
+else
+{
+    ?>
+  <script type="text/javascript">
+    alert("Team full");
+ </script> 
+ <?php
+}
+}
+  ?>

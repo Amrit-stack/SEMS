@@ -1,0 +1,50 @@
+body{
+	background-image: url("newback.jpg");
+	background-size:cover;
+ 
+
+
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:green;
+}
+
+li {
+  float: right;
+
+}
+
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size:20px;
+}
+
+li a:hover{
+  background-color:#f44336;
+}
+.footer {
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:green;
+  color: white;
+  text-align: center;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  
+}
+.footer p {
+	font-size: 1.5em;
+}
+.animation {
+  text-align:center;
+  color:red;
+}
