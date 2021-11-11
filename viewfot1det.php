@@ -64,7 +64,7 @@ $obj_pdf->writeHTML($content);
 $obj_pdf->Output('file.pdf', 'I'); 
 
 }  
-
+//
 
  ?>
 
